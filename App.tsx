@@ -1,6 +1,7 @@
-import { Button, Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import { Input } from "./shared/input/input";
 import { Colors, Gaps } from "./shared/tokens";
+import { Button } from "./shared/button/button";
 
 export default function App() {
   return (
@@ -13,8 +14,8 @@ export default function App() {
         />
         <View style={styles.form}>
           <Input placeholder="Email" />
-          <Input placeholder="Пароль" />
-          <Button title="Войти" />
+          <Input isPassword placeholder="Пароль" />
+          <Button text="Войти" />
         </View>
         <Text>Восстановить пароль</Text>
       </View>
